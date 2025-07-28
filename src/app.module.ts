@@ -11,7 +11,7 @@ import { Environment } from './config/env';
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: process.env.DB_HOST,
-      port: process.env.DB_PORT ? +process.env.DB_PORT : 3000,
+      port: process.env.DB_PORT ? +process.env.DB_PORT : 5432,
       database: process.env.DB_NAME,
       username: process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD,
